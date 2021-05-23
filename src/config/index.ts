@@ -1,7 +1,7 @@
 // icons
 import HomeIcon from '@material-ui/icons/Home';
 import DashboardIcon from '@material-ui/icons/BarChartOutlined';
-import CodeIcon from '@material-ui/icons/CodeOutlined';
+import {MeetingRoom} from '@material-ui/icons';
 import SettingsIcon from '@material-ui/icons/SettingsOutlined';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PrivateIcon from '@material-ui/icons/LockOutlined';
@@ -10,9 +10,9 @@ import PublicIcon from '@material-ui/icons/LockOpenOutlined';
 // components
 import Home from '../pages/Home';
 import Dashboard from '../pages/Dashboard';
+import MeetUps from '../pages/MeetUps'
 import GHPrivate from '../pages/GitHub/PrivateRepo';
 import GHPublic from '../pages/GitHub/PublicRepo';
-import CodeEditor from '../pages/CodeEditor';
 import Settings from '../pages/Settings';
 
 // interface
@@ -31,13 +31,13 @@ export const routes: Array<RouteItem> = [
         appendDivider: true
     },
     {
-        key: "router-dashboard",
-        title: "Dashboard",
-        tooltip: "Dashboard",
-        path: "/dashboard",
+        key: "router-meetup",
+        title: "MeetUp",
+        tooltip: "MeetUp",
+        path: "/meetup",
         enabled: true,
-        component: Dashboard,
-        icon: DashboardIcon
+        component: MeetUps,
+        icon: MeetingRoom
     },
     {
         key: "router-gh",
@@ -54,8 +54,8 @@ export const routes: Array<RouteItem> = [
                 enabled: true,
                 component: GHPrivate,
                 icon: PrivateIcon
-            }
-            , {
+            },
+            {
                 key: "router-gh-public",
                 title: "Public Repos",
                 tooltip: "Public Repos",
@@ -66,16 +66,7 @@ export const routes: Array<RouteItem> = [
             }
         ]
     },
-    {
-        key: "router-code",
-        title: "Code Editor",
-        tooltip: "Code Editor",
-        path: "/code-editor",
-        enabled: true,
-        component: CodeEditor,
-        icon: CodeIcon,
-        appendDivider: true
-    },
+    
     {
         key: "router-settings",
         title: "Settings",
