@@ -1,8 +1,8 @@
-import React, { FC, ReactElement } from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { FC, ReactElement } from "react";
+import { createStyles, makeStyles} from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     title: {
       textTransform: "uppercase",

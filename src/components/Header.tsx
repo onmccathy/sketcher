@@ -1,4 +1,4 @@
-import React, { ReactElement, FC } from "react";
+import { ReactElement, FC } from "react";
 import clsx from "clsx";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import {

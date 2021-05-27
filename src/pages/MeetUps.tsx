@@ -1,6 +1,6 @@
-import React, { FC, ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles, createStyles} from "@material-ui/core/styles";
 
 // components
 import PageTitle from "../components/PageTitle";
@@ -9,7 +9,7 @@ import PageTitle from "../components/PageTitle";
 import { APP_TITLE, PAGE_TITLE_MEETUPS } from '../utils/constants';
 
 // define css-in-js
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
     createStyles({
         root: {
             flex: 1,
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-const Dashboard: FC<{}> = (): ReactElement => {
+const Meetups: FC<{}> = (): ReactElement => {
     const classes = useStyles();
     return (
         <>
@@ -34,4 +34,4 @@ const Dashboard: FC<{}> = (): ReactElement => {
     )
 }
 
-export default Dashboard;
+export default Meetups;
