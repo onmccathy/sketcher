@@ -1,0 +1,19 @@
+Get http://localhost:5000/
+###
+GET http://localhost:5000/givemehope/start/monitor
+###
+####
+
+GET http://localhost:5000/givemehope/stop/monitor
+
+###
+GET http://localhost:5000/givemehope/get/maxdate
+
+###
+Post http://localhost:5000/givemehope/set/maxdate?newMaxDate=2021-11-30
+
+###
+GET http://localhost:5000/auth/google
+
+###
+GET http://localhost:5000/auth/google/refreshtoken?id="anid"
